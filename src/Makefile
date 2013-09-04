@@ -6,9 +6,9 @@ WWWDIR=www
 OCAMLBUILD=ocamlbuild -classic-display
 PACKAGES=-pkgs cow,cow.syntax,opam.client
 SYNTAX=-tags "syntax(camlp4o)"
-FLAGS=-use-ocamlfind -cflags "-bin-annot" -no-links -tags "debug"
+FLAGS=-use-ocamlfind -cflags "-bin-annot" -no-links -tags "debug,annot"
 INCLUDES=-I apalog
-TARGET=opam2web
+TARGET=opam2plist
 
 JS_OF_OCAML=js_of_ocaml
 JSFLAGS=-package js_of_ocaml.syntax,js_of_ocaml -syntax camlp4o
