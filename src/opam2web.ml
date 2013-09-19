@@ -119,7 +119,7 @@ let make_website user_options repo_info =
       { menu_link = { text="Home"; href="/" };
         menu_item = Internal (0, Template.serialize home_index) };
 
-      { menu_link = { text="Packages"; href="pkg/" };
+      { menu_link = { text="Software"; href="pkg/" };
         menu_item = Internal (1, package_index) };
 
       { menu_link = { text="Documentation"; href="doc/" };
