@@ -191,7 +191,7 @@ let to_html ~href_prefix ~content_dir ~sortby_links ~preds
           <:html<
             <tr>
               <td title=$str:pkg_download$>
-               <a href=$str:href_prefix^pkg_info.pkg_href$>
+               <a href=$str:href_prefix^pkg_info.pkg_href^"index.html"$>
                  $str: pkg_info.pkg_name$
                </a>
               </td>
